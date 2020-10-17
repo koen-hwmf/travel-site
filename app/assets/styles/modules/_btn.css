@@ -1,0 +1,19 @@
+.btn {
+  background-color: $mainBlue;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+
+  &--cta {
+    background-color: $ctaMain;
+  }
+
+  &--large {
+    font-size: 1.6rem;
+    padding: 1.8rem 3rem;
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+  }
+}

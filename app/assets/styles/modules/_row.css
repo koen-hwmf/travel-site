@@ -1,0 +1,46 @@
+.row {
+  /* @mixin clearfix; */
+  display: flex;
+  flex-direction: column;
+
+  @mixin atSmall {
+    flex-direction: row;
+  }
+
+  /* &--gutters {
+    margin-right: -6.5rem;
+  } */
+
+  /* &--gutters > div {
+    padding-right: 6.5rem;
+  } */
+
+  &__medium-4 {
+    order: 2;
+    @mixin atSmall {
+      flex: 1;
+      order: 1;
+      /* float: left;
+      width: 33.33%; */
+    }
+  }
+
+  /* &__medium-4--larger {
+    width: 37%;
+  } */
+
+  &__medium-8 {
+    order: 1;
+    @mixin atSmall {
+      flex: 2;
+      padding-left: 6.5rem;
+      order: 2;
+      /* float: left;
+      width: 66.66%; */
+    }
+  }
+
+  /* &__medium-8--larger {
+    width: 63%;
+  } */
+}

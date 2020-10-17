@@ -1,0 +1,24 @@
+.wrapper {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  max-width: 123.6rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--medium {
+    max-width: 97.6rem;
+  }
+
+  /* verwijder padding bij wrapper in wrapper */
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--b-margin {
+    margin-bottom: 2rem;
+    @mixin atSmall {
+      margin-bottom: 6rem;
+    }
+  }
+}
