@@ -19,16 +19,32 @@
     <script src="./bundled.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="assets/images/icons/clear-view-escapes.svg" />
-      <a href="#" class="btn">Get in Touch</a>
-      <nav>
-        <ul>
-          <li><a href="#our-beginning">Our Beginning</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container">
+        <img
+          src="assets/images/icons/clear-view-escapes.svg"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <a href="#" class="btn">Get in Touch</a>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#our-beginning" class="header__nav-link"
+                >Our Beginning</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#features" class="header__nav-link">Features</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#testimonials" class="header__nav-link">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__menu-icon">
+        <div class="header__menu-icon__middle"></div>
+      </div>
     </header>
 
     <div class="large-hero">
