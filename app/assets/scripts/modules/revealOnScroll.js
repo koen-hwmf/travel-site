@@ -16,7 +16,6 @@ class RevealOnScroll {
     window.addEventListener(
       'resize',
       debounce(() => {
-        console.log('Resizeing just ran');
         this.browserHeight = window.innerHeight;
       }, 333)
     );
@@ -33,7 +32,6 @@ class RevealOnScroll {
 
   calculateIfScrolledTo(el) {
     if (window.scrollY + this.browserHeight > el.offsetTop) {
-      console.log('Element was calculated');
       let scrollPercent =
         (el.getBoundingClientRect().y / this.browserHeight) * 100; // percentage van hoever van de viewport top het el in beeld is
       if (scrollPercent < this.tresholdPercentage) {
