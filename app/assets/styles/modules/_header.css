@@ -6,8 +6,13 @@
   transition: background-color 0.3s ease-out;
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, 0.3);
     padding: 2rem 0;
+
+    &--dark {
+      background-color: rgba(23, 51, 72, 0.85);
+    }
   }
 
   &--expanded {
@@ -42,11 +47,18 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.3s ease-out;
 
     @mixin atMedium {
+      /* width: 25rem; */
       padding: 3rem;
       left: 20%;
       transform: translateX(0);
+
+      .header--dark & {
+        top: -2rem;
+        transform: scale(0.7);
+      }
     }
   }
 
@@ -113,6 +125,10 @@
   &__nav-link {
     text-decoration: none;
     color: #fff;
+
+    &.is-current-link {
+      color: #fabb69;
+    }
   }
 
   &__menu-icon {

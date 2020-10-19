@@ -29,15 +29,25 @@
           <a href="#" class="btn">Get in Touch</a>
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a href="#our-beginning" class="header__nav-link"
+              <a
+                href="#our-beginning"
+                id="our-beginning-link"
+                class="header__nav-link"
                 >Our Beginning</a
               >
             </li>
             <li class="header__nav-item">
-              <a href="#features" class="header__nav-link">Features</a>
+              <a href="#features" id="features-link" class="header__nav-link"
+                >Features</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="#testimonials" class="header__nav-link">Testimonials</a>
+              <a
+                href="#testimonials"
+                id="testimonials-link"
+                class="header__nav-link"
+                >Testimonials</a
+              >
             </li>
           </ul>
         </nav>
@@ -93,7 +103,11 @@
       </div>
     </div>
 
-    <div id="our-beginning" class="page-section">
+    <div
+      id="our-beginning"
+      class="page-section"
+      data-matching-link="#our-beginning-link"
+    >
       <div class="wrapper">
         <h2
           class="headline headline--centered headline--light headline--b-margin-sm"
@@ -185,7 +199,11 @@
       </div>
     </div>
 
-    <div id="features" class="page-section page-section--blue">
+    <div
+      id="features"
+      class="page-section page-section--blue"
+      data-matching-link="#features-link"
+    >
       <div class="wrapper">
         <div class="section__title-box">
           <img class="section-title__icon" src="assets/images/icons/star.svg" />
@@ -237,7 +255,11 @@
       </div>
     </div>
 
-    <div id="testimonials" class="section-testimonials">
+    <div
+      id="testimonials"
+      class="page-section section-testimonials"
+      data-matching-link="#testimonials-link"
+    >
       <div class="section-testimonials__title-box">
         <img
           class="section-testimonials__title-icon"
