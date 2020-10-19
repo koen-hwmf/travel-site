@@ -1,4 +1,5 @@
 import '../styles/styles.css';
+import 'lazysizes';
 
 import MobileMenu from './modules/mobileMenu.js';
 import RevealOnScroll from './modules/revealOnScroll.js';
@@ -27,6 +28,14 @@ document.querySelectorAll('.open-modal').forEach((el) => {
       modal.openModal();
     }
   });
+});
+
+const testimonialsSection = document.querySelector('.section-testimonials');
+testimonialsSection.addEventListener('lazybeforeunveil', (e) => {
+  const bg = e.target.getAttribute('data-bg');
+  if (bg) {
+    e.target.style.backgroundImage = `url(${bg})`;
+  }
 });
 
 if (module.hot) {

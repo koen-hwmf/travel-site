@@ -125,8 +125,9 @@
 
         <div class="wrapper wrapper--medium wrapper--b-margin">
           <img
+            class="lazyload"
             sizes="(min-width: 970px) 976px, 100vw"
-            srcset="
+            data-srcset="
               assets/images/first-trip-low-res.jpg  565w,
               assets/images/first-trip.jpg          976w,
               assets/images/first-trip-hi-dpi.jpg  1952w
@@ -140,7 +141,7 @@
             <picture>
               <source
                 sizes="404px"
-                srcset="
+                data-srcset="
                   assets/images/our-start.jpg        404w,
                   assets/images/our-start-hi-dpi.jpg 808w
                 "
@@ -148,14 +149,15 @@
               />
               <source
                 sizes="310px"
-                srcset="
+                data-srcset="
                   assets/images/our-start-portrait.jpg        382w,
                   assets/images/our-start-portrait-hi-dpi.jpg 764w
                 "
                 media="(min-width: 800px)"
               />
               <img
-                srcset="
+                class="lazyload"
+                data-srcset="
                   assets/images/our-start-landscape.jpg         800w,
                   assets/images/our-start-landscape-hi-dpi.jpg 1600w
                 "
@@ -259,8 +261,9 @@
 
     <div
       id="testimonials"
-      class="page-section section-testimonials"
+      class="page-section section-testimonials lazyload"
       data-matching-link="#testimonials-link"
+      data-bg="assets/images/testimonials-bg.jpg"
     >
       <div class="section-testimonials__title-box">
         <img
@@ -276,11 +279,11 @@
         <div class="testimonial">
           <img
             sizes="160px"
-            srcset="
+            data-srcset="
               assets/images/testimonial-jane.jpg        160w,
               assets/images/testimonial-jane-hi-dpi.jpg 320w
             "
-            class="testimonial__img"
+            class="testimonial__img lazyload"
           />
           <h3 class="testimonial__heading">Jane Doe</h3>
           <h4 class="testimonial__sub-heading">9 Time Escaper</h4>
@@ -292,17 +295,16 @@
             adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.&rdquo;
           </p>
-          <div class="testimonial__content"></div>
         </div>
 
         <div class="testimonial">
           <img
             sizes="160px"
-            srcset="
+            data-srcset="
               assets/images/testimonial-john.jpg        160w,
               assets/images/testimonial-john-hi-dpi.jpg 320w
             "
-            class="testimonial__img"
+            class="testimonial__img lazyload"
           />
           <h3 class="testimonial__heading">John Smith</h3>
           <h4 class="testimonial__sub-heading">4 Time Escaper</h4>
@@ -312,17 +314,16 @@
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;
           </p>
-          <div class="testimonial__content"></div>
         </div>
 
         <div class="testimonial">
           <img
             sizes="160px"
-            srcset="
+            data-srcset="
               assets/images/testimonial-cat.jpg        160w,
               assets/images/testimonial-cat-hi-dpi.jpg 320w
             "
-            class="testimonial__img"
+            class="testimonial__img lazyload"
           />
           <h3 class="testimonial__heading">Cat McKitty</h3>
           <h4 class="testimonial__sub-heading">6 Time Escaper</h4>
@@ -333,7 +334,6 @@
             anim id est laborum. Lorem ipsum dolor sit amet, consectetur
             adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;
           </p>
-          <div class="testimonial__content"></div>
         </div>
       </div>
     </div>
